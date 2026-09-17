@@ -26,7 +26,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex items-center gap-3 sm:gap-4 shrink-0">
-          <Link href="/signup" className="text-sm font-medium bg-foreground text-background px-6 py-2.5 rounded-full hover:bg-white transition-colors">
+          <Link href="https://competitions.exoquest.dev/" className="text-sm font-medium bg-foreground text-background px-6 py-2.5 rounded-full hover:bg-white transition-colors">
             Get Started
           </Link>
         </div>
@@ -49,11 +49,11 @@ export default function Home() {
                 The cybersecurity CTF ecosystem for learning through hands-on challenges and running real competitions.
               </p>
               <div className="animate-fade-up flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4" style={{ animationDelay: "0.4s" }}>
-                <Link href="/practice" className="group flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-medium transition duration-300 shadow-[0_0_40px_-10px_rgba(168,85,247,0.5)]">
+                <Link href="https://practices.exoquest.dev/" className="group flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-medium transition duration-300 shadow-[0_0_40px_-10px_rgba(168,85,247,0.5)]">
                   Start Practicing
                   <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <Link href="/host" className="group flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-full bg-[#0a0e14]/80 border border-gray-700 hover:border-gray-500 text-foreground font-medium transition duration-300">
+                <Link href="https://competitions.exoquest.dev/" className="group flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-full bg-[#0a0e14]/80 border border-gray-700 hover:border-gray-500 text-foreground font-medium transition duration-300">
                   Host a Competition
                 </Link>
               </div>
@@ -115,7 +115,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <div className="pt-6">
-                  <Link href="/practice" className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 font-medium group transition-colors text-lg">
+                  <Link href="https://practices.exoquest.dev/" className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 font-medium group transition-colors text-lg">
                     Explore Challenges <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>
@@ -168,7 +168,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <div className="pt-6">
-                  <Link href="/host" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium group transition-colors text-lg">
+                  <Link href="https://competitions.exoquest.dev/" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium group transition-colors text-lg">
                     Create a Competition <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>
@@ -242,7 +242,7 @@ export default function Home() {
               Ready to enter the arena? Join thousands of hackers and organizers building the future of security.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <Link href="/signup" className="w-full sm:w-auto px-10 py-5 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-bold text-lg transition duration-300 shadow-[0_0_40px_-10px_rgba(168,85,247,0.5)]">
+              <Link href="https://practices.exoquest.dev/" className="w-full sm:w-auto px-10 py-5 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-bold text-lg transition duration-300 shadow-[0_0_40px_-10px_rgba(168,85,247,0.5)]">
                 Start Hacking for Free
               </Link>
               <Link href="/contact" className="w-full sm:w-auto px-10 py-5 rounded-full bg-[#0a0e14]/80 border border-gray-700 hover:border-gray-500 text-foreground font-bold text-lg transition duration-300">
