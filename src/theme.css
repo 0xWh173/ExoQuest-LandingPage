@@ -1,0 +1,115 @@
+@theme {
+  --color-background: #08090d;
+  --color-foreground: #f1f5f9;
+  
+  /* Shared UI Tokens */
+  --color-card: #0c0e14;
+  --color-card-border: rgba(255, 255, 255, 0.06);
+  --color-glass: rgba(255, 255, 255, 0.02);
+  --color-glass-border: rgba(255, 255, 255, 0.05);
+  
+  /* Primary accents */
+  --color-primary: #9333ea;
+  --color-primary-hover: #a855f7;
+  --color-primary-glow: rgba(147, 51, 234, 0.4);
+  
+  /* Secondary accents */
+  --color-secondary: #06b6d4;
+  --color-secondary-hover: #22d3ee;
+  
+  /* Semantic accents */
+  --color-danger: #ef4444;
+  --color-danger-hover: #f87171;
+  --color-success: #22c55e;
+  --color-success-hover: #4ade80;
+  --color-warning: #eab308;
+  --color-warning-hover: #facc15;
+  --color-muted: #8b949e;
+  --color-muted-border: rgba(255, 255, 255, 0.08);
+
+  /* Elevation (Shadows) - Multi-layered umbra/penumbra */
+  --shadow-elevation-1: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-elevation-2: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.5);
+  --shadow-elevation-glow: 0 0 20px var(--color-primary-glow), 0 0 40px rgba(147, 51, 234, 0.1);
+  --shadow-elevation-danger: 0 0 20px rgba(239, 68, 68, 0.3);
+  
+  /* Radii */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  
+  /* Chart Colors */
+  --color-chart-scale-01: #161b22;
+  --color-chart-scale-02: rgba(147, 51, 234, 0.25);
+  --color-chart-scale-03: rgba(147, 51, 234, 0.5);
+  --color-chart-scale-04: rgba(147, 51, 234, 0.75);
+  --color-chart-scale-05: rgb(192, 132, 252);
+  --color-chart-tooltip-background: #0d1117;
+  --color-chart-tooltip-foreground: #f1f5f9;
+  --color-chart-tooltip-muted: #8b949e;
+  --color-chart-label: #8b949e;
+  
+  /* Font Family */
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  /* Animation */
+  --animate-flip-top: flip-top 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-in: fade-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-slide-up: slide-up 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-zoom-in: zoom-in 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-shake: shake 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  --animate-pulse-slow: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  
+  /* Custom Easing for transitions */
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Base body styles for noise texture (handled in React typically, or global css) */
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+@keyframes flip-top {
+  0% { transform: perspective(900px) rotateX(-70deg) translateY(-10px); opacity: 0; }
+  100% { transform: perspective(900px) rotateX(0deg) translateY(0); opacity: 1; }
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slide-up {
+  0% { transform: translateY(10px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoom-in {
+  0% { transform: scale(0.95); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .5; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

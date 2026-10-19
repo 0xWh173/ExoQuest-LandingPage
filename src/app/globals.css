@@ -1,46 +1,21 @@
 @import "tailwindcss";
+@import "../theme.css";
 
 :root {
   --background: #08090d;
   --foreground: #f1f5f9;
 }
 
-@theme inline {
-  --color-background: #08090d;
-  --color-foreground: #f1f5f9;
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-mono);
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
-}
-
-@keyframes fade-up {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-    filter: blur(8px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
-  }
-}
-
-.animate-fade-up {
-  animation: fade-up 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  opacity: 0;
+  font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 code, pre, .font-mono {
   font-family: var(--font-mono), monospace;
 }
 
-/* Force dark color scheme on all select elements (prevents white dropdown backgrounds) */
 select {
   color-scheme: dark;
 }
@@ -48,4 +23,29 @@ select {
 select option {
   background-color: #0a0e14;
   color: #f1f5f9;
+}
+
+/* Custom Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2d36;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary, #9333ea);
+}
+
+/* Firefox Scrollbar Support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2a2d36 transparent;
 }
