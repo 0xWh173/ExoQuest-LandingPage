@@ -9,6 +9,7 @@ import {
   PRACTICES_URL,
   COMPETITIONS_URL,
   WRITEUPS_URL,
+  SITE_URL,
 } from "@/shared/lib/config";
 
 interface NavLinkItem {
@@ -67,12 +68,12 @@ export function Navbar() {
 
         {/* Desktop Action Buttons */}
         <div className="hidden md:flex items-center gap-3">
-          <a href={`${PRACTICES_URL}/login`}>
+          <a href={`${PRACTICES_URL}/login?returnTo=${encodeURIComponent(SITE_URL)}`}>
             <Button variant="ghost" size="sm">
               Login
             </Button>
           </a>
-          <a href={`${PRACTICES_URL}/register`}>
+          <a href={`${PRACTICES_URL}/register?returnTo=${encodeURIComponent(SITE_URL)}`}>
             <Button variant="primary" size="sm" leftIcon={<Swords className="w-4 h-4" />}>
               Start Exploiting
             </Button>
@@ -115,12 +116,12 @@ export function Navbar() {
           )}
 
           <div className="pt-4 border-t border-[var(--color-card-border)] space-y-3">
-            <a href={`${PRACTICES_URL}/login`} className="block w-full">
+            <a href={`${PRACTICES_URL}/login?returnTo=${encodeURIComponent(SITE_URL)}`} className="block w-full">
               <Button variant="ghost" className="w-full" onClick={() => setMobileOpen(false)}>
                 Login
               </Button>
             </a>
-            <a href={`${PRACTICES_URL}/register`} className="block w-full">
+            <a href={`${PRACTICES_URL}/register?returnTo=${encodeURIComponent(SITE_URL)}`} className="block w-full">
               <Button
                 variant="primary"
                 className="w-full"

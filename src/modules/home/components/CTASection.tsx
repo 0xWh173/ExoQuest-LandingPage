@@ -1,6 +1,6 @@
 import { Container } from "@/shared/components/layout/Container";
 import { Button } from "@/shared/components/ui/Button";
-import { PRACTICES_URL } from "@/shared/lib/config";
+import { PRACTICES_URL, SITE_URL } from "@/shared/lib/config";
 
 export function CTASection() {
   return (
@@ -15,7 +15,7 @@ export function CTASection() {
           skills every day on ExoQuest.
         </p>
         <div className="mt-10 flex justify-center gap-4">
-          <a href={`${PRACTICES_URL}/register`}>
+          <a href={`${PRACTICES_URL}/register?returnTo=${encodeURIComponent(SITE_URL)}`}>
             <Button size="lg" className="mt-6">
               Lets Hack
             </Button>
