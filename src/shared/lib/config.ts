@@ -2,12 +2,12 @@ const isProd = process.env.NODE_ENV === "production";
 
 export const PRACTICES_URL = (
   process.env.NEXT_PUBLIC_PRACTICES_URL ||
-  (isProd ? "https://practices.exoquest.dev" : "http://localhost:3000")
+  (isProd ? "https://practices.exoquest.dev" : "http://localhost:3001")
 ).replace(/\/$/, "");
 
 export const COMPETITIONS_URL = (
   process.env.NEXT_PUBLIC_COMPETITIONS_URL ||
-  (isProd ? "https://competitions.exoquest.dev" : "http://localhost:3001")
+  (isProd ? "https://competitions.exoquest.dev" : "http://localhost:3002")
 ).replace(/\/$/, "");
 
 export const WRITEUPS_URL = (
