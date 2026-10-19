@@ -34,7 +34,7 @@ export function Hero() {
                 Start Exploiting
               </a>
               <a
-                href={`${PRACTICES_URL}/dashboard/challenges`}
+                href={`${PRACTICES_URL}/challenges`}
                 className="rounded-xl border border-white/10 bg-white/5 px-7 py-3.5 text-base font-semibold text-white transition-all hover:scale-105 hover:border-purple-500/30 hover:bg-white/10 active:scale-95"
               >
                 Explore Challenges

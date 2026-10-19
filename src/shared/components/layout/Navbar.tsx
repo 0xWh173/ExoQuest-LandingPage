@@ -22,7 +22,7 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navLinks: NavLinkItem[] = [
-    { label: "Challenges", href: `${PRACTICES_URL}/dashboard/challenges`, isExternal: true },
+    { label: "Challenges", href: `${PRACTICES_URL}/challenges`, isExternal: true },
     { label: "Competitions", href: COMPETITIONS_URL, isExternal: true },
     { label: "Writeups", href: WRITEUPS_URL, isExternal: true },
     { label: "About", href: "/about" },
