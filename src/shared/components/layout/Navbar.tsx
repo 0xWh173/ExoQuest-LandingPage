@@ -26,8 +26,8 @@ export function Navbar() {
 
   useEffect(() => {
     setHydrated(true);
-    // Check shared cookie for cross-port / cross-domain authentication
-    const checkAuth = () => {
+    // Check shared cookie, localStorage, and silent backend refresh for cross-port / cross-domain authentication
+    const checkAuth = async () => {
       if (typeof document === "undefined") return;
       const match = document.cookie.match(/(^| )exo-auth-storage=([^;]+)/);
       if (match) {
@@ -41,10 +41,42 @@ export function Navbar() {
           // parse failed
         }
       }
+
+      // Check localStorage fallback
+      try {
+        const local = localStorage.getItem("exo-auth-storage");
+        if (local) {
+          const parsed = JSON.parse(local);
+          if (parsed?.state?.isAuthenticated || parsed?.state?.user) {
+            setIsAuthenticated(true);
+            return;
+          }
+        }
+      } catch {
+        // localStorage access failed
+      }
+
+      // Fallback: silent refresh verification with backend using HttpOnly refresh cookie
+      try {
+        const res = await fetch(`${API_BASE_URL}/api/auth/refresh`, {
+          method: "POST",
+          credentials: "include",
+        });
+        if (res.ok) {
+          const data = await res.json();
+          if (data?.user || data?.accessToken) {
+            setIsAuthenticated(true);
+            return;
+          }
+        }
+      } catch {
+        // silent refresh failed / offline
+      }
+
       setIsAuthenticated(false);
     };
 
-    checkAuth();
+    void checkAuth();
 
     // Listen to cross-tab BroadcastChannel auth sync if available
     if (typeof BroadcastChannel !== "undefined") {
@@ -146,14 +178,15 @@ export function Navbar() {
               </Button>
             </a>
           ) : (
-            <button
+            <Button
+              variant="outline"
+              size="sm"
+              leftIcon={<LogOut className="w-4 h-4" />}
               onClick={handleLogout}
-              title="Logout"
-              className="flex items-center justify-center h-9 w-9 rounded-md text-[var(--color-muted)] hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
-              aria-label="Logout"
+              className="hover:border-red-500/50 hover:text-red-400 hover:bg-red-500/10 cursor-pointer"
             >
-              <LogOut size={18} />
-            </button>
+              Logout
+            </Button>
           )}
         </div>
 
