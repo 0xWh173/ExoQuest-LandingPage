@@ -58,13 +58,13 @@ export function Navbar() {
 
       // Fallback: silent refresh verification with backend using HttpOnly refresh cookie
       try {
-        const res = await fetch(`${API_BASE_URL}/api/auth/refresh`, {
+        const res = await fetch(`${API_BASE_URL}/api/auth/refresh-token`, {
           method: "POST",
           credentials: "include",
         });
         if (res.ok) {
           const data = await res.json();
-          if (data?.user || data?.accessToken) {
+          if (data?.user || data?.token) {
             setIsAuthenticated(true);
             return;
           }
@@ -105,17 +105,25 @@ export function Navbar() {
   ];
 
   const handleLogout = async () => {
+    const csrfMatch = typeof document !== "undefined" ? document.cookie.match(/(?:^|; )XSRF-TOKEN=([^;]*)/) : null;
+    const csrfToken = csrfMatch ? decodeURIComponent(csrfMatch[1]) : "";
     try {
       await fetch(`${API_BASE_URL}/api/auth/logout`, {
         method: "POST",
         credentials: "include",
+        headers: csrfToken ? { "X-XSRF-TOKEN": csrfToken } : {},
       });
     } catch {
       // offline / unreachable
     }
-    // Clear shared cookie
+    // Clear storage and cookies
+    try {
+      localStorage.removeItem("exo-auth-storage");
+    } catch {}
     if (typeof document !== "undefined") {
       document.cookie = "exo-auth-storage=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax";
+      document.cookie = "exo_access_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax";
+      document.cookie = "exo_refresh_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax";
     }
     if (typeof BroadcastChannel !== "undefined") {
       try {
@@ -178,15 +186,14 @@ export function Navbar() {
               </Button>
             </a>
           ) : (
-            <Button
-              variant="outline"
-              size="sm"
-              leftIcon={<LogOut className="w-4 h-4" />}
-              onClick={handleLogout}
-              className="hover:border-red-500/50 hover:text-red-400 hover:bg-red-500/10 cursor-pointer"
+            <button 
+              onClick={handleLogout} 
+              title="Logout"
+              className="flex items-center justify-center h-9 w-9 rounded-md text-[var(--color-muted)] hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+              aria-label="Logout"
             >
-              Logout
-            </Button>
+              <LogOut size={18} />
+            </button>
           )}
         </div>
 
@@ -245,9 +252,7 @@ export function Navbar() {
                   setMobileOpen(false);
                   handleLogout();
                 }}
-              >
-                <LogOut size={16} /> Logout
-              </Button>
+              />
             )}
           </div>
         </div>
