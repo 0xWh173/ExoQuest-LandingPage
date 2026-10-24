@@ -31,3 +31,8 @@ export const ACCOUNTS_URL = (
   (isProd ? "https://accounts.exoquest.dev" : "http://localhost:3005")
 ).replace(/\/$/, "");
 
+export const ADMIN_URL = (
+  process.env.NEXT_PUBLIC_ADMIN_URL ||
+  (isProd ? "https://admin.exoquest.dev" : "http://localhost:3004")
+).replace(/\/$/, "");
+
