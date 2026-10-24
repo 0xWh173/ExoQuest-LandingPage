@@ -1,0 +1,196 @@
+# Privacy Policy
+
+At **ExoQuest**, accessible from our website and platform, one of our main priorities is the privacy of our visitors and users.
+
+This Privacy Policy document explains what information may be collected by ExoQuest, how we use that information, and how we protect it.
+
+## 1. Information We Collect
+
+When you create an ExoQuest account or use our platform, we may collect information such as:
+
+* Username.
+* Name, if provided.
+* Email address.
+* Password or authentication information.
+* Team information.
+* Competition participation information.
+* Challenge submissions.
+* Scores and leaderboard information.
+* Profile information.
+* Messages or feedback sent to us.
+* Technical information about your device and browser.
+* IP address.
+* Log information.
+* Information relating to platform activity.
+
+The information you provide and the reason it is collected will generally be made clear at the point where we request it.
+
+## 2. Information You Provide
+
+If you contact us directly, we may receive additional information such as:
+
+* Your name.
+* Email address.
+* Phone number, if provided.
+* Contents of your message.
+* Screenshots or other information you provide while reporting an issue.
+* Any other information you voluntarily provide.
+
+We recommend that you do not include unnecessary sensitive personal information in public profiles, challenge submissions, comments, or support requests.
+
+## 3. How We Use Your Information
+
+We may use the information we collect to:
+
+* Create and manage user accounts.
+* Provide and operate the ExoQuest platform.
+* Allow users to participate in CTF competitions.
+* Process challenge submissions.
+* Maintain leaderboards and rankings.
+* Track achievements and competition progress.
+* Improve, personalize, and expand the platform.
+* Understand and analyze how users interact with ExoQuest.
+* Detect cheating, fraud, abuse, and unauthorized activity.
+* Protect the security of ExoQuest and its users.
+* Troubleshoot technical problems.
+* Respond to support requests.
+* Communicate with users about the platform.
+* Send important service-related notifications.
+* Develop new features and functionality.
+* Comply with applicable legal obligations.
+
+## 4. Log Files
+
+ExoQuest may follow a standard procedure of using log files.
+
+Information collected through log files may include:
+
+* IP addresses.
+* Browser type.
+* Internet Service Provider.
+* Date and time of access.
+* Referring and exit pages.
+* Pages or features accessed.
+* Challenge-related activity.
+* Other technical information.
+
+This information may be used for administration, security, troubleshooting, analytics, and detecting abuse.
+
+## 5. Cookies
+
+ExoQuest may use cookies and similar technologies to improve the user experience.
+
+Cookies may be used for:
+
+* Authentication.
+* Session management.
+* User preferences.
+* Security.
+* Analytics.
+* Platform functionality.
+
+Users may be able to control cookies through their browser settings. Disabling certain cookies may affect some functionality of the platform.
+
+## 6. Public Information
+
+Certain information may be publicly visible when you use ExoQuest.
+
+Depending on the features you use, this may include:
+
+* Username.
+* Team name.
+* Score.
+* Rank.
+* Competition achievements.
+* Badges or awards.
+* Public profile information.
+
+Please avoid using personally identifying information as your public username if you do not want it displayed publicly.
+
+## 7. Challenge and Competition Data
+
+When participating in ExoQuest challenges or competitions, we may collect information related to your activity, including:
+
+* Challenge attempts.
+* Flag submissions.
+* Submission timestamps.
+* Scores.
+* Challenge completion status.
+* Competition rankings.
+* Team participation.
+* Competition-related events and logs.
+
+This information may be used to operate competitions, calculate scores, detect cheating, investigate disputes, and maintain platform security.
+
+## 8. Security
+
+We take reasonable measures to protect information stored by ExoQuest from unauthorized access, alteration, disclosure, or destruction.
+
+However, no method of transmission or electronic storage is completely secure.
+
+We cannot guarantee absolute security of information transmitted to or stored by the platform.
+
+## 9. Third-Party Services
+
+ExoQuest may use third-party services for purposes such as:
+
+* Authentication.
+* Hosting.
+* Analytics.
+* Email delivery.
+* Payment processing.
+* Security monitoring.
+* Infrastructure management.
+
+These services may process information according to their own privacy policies and applicable agreements.
+
+We recommend reviewing the privacy policies of third-party services you use through ExoQuest.
+
+## 10. Data Retention
+
+We may retain account, competition, security, and technical information for as long as reasonably necessary to:
+
+* Provide the platform.
+* Maintain competition records.
+* Maintain security logs.
+* Prevent abuse and fraud.
+* Resolve disputes.
+* Meet legal or regulatory obligations.
+* Maintain legitimate business records.
+
+Retention periods may vary depending on the type and purpose of the information.
+
+## 11. Children's Privacy
+
+ExoQuest does not knowingly collect personal information from children in violation of applicable laws.
+
+If you believe that a child has provided personal information to ExoQuest without appropriate authorization, please contact us so that we can review and take appropriate action.
+
+## 12. Your Privacy Rights
+
+Depending on your location and applicable law, you may have rights relating to your personal information, including rights to:
+
+* Request access to personal information we hold about you.
+* Request correction of inaccurate information.
+* Request deletion of certain information.
+* Request restriction of certain processing.
+* Object to certain processing.
+* Withdraw consent where processing is based on consent.
+
+Requests may be subject to legal, security, competition, or operational requirements.
+
+To exercise applicable rights, contact us using the contact information provided below.
+
+## 13. Changes to This Privacy Policy
+
+ExoQuest may update this Privacy Policy from time to time.
+
+Any changes will be published on this page along with an updated "Last Updated" date.
+
+We encourage users to periodically review this Privacy Policy to remain informed about how information is handled.
+
+## 14. Contact Us
+
+If you have questions, concerns, or requests regarding this Privacy Policy, please contact us.
+
+**ExoQuest**

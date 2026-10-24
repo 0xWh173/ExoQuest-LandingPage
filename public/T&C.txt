@@ -1,0 +1,232 @@
+# Terms Of Services
+
+Welcome to **ExoQuest**!
+
+These Terms Of Services outline the rules and regulations for the use of ExoQuest's Website and Platform.
+
+By accessing this website, you agree to accept these Terms Of Services. Do not continue to use ExoQuest if you do not agree with all of the Terms Of Services stated on this page.
+
+## 1. Use of the Platform
+
+ExoQuest is a cybersecurity Capture The Flag (CTF) and learning platform designed for cybersecurity education, training, research, and competitions.
+
+By using ExoQuest, you agree to use the platform responsibly and only for lawful and authorized purposes.
+
+You must not use ExoQuest to:
+
+* Attack or compromise systems that are not part of an authorized ExoQuest challenge.
+* Attempt to access another user's account or private information.
+* Disrupt, damage, or overload ExoQuest infrastructure.
+* Attempt to gain unauthorized administrative access.
+* Interfere with other participants or their challenge environments.
+* Use the platform for illegal activities.
+* Upload malicious content intended to harm ExoQuest or its users.
+* Attempt to manipulate scores, flags, submissions, or leaderboards.
+
+Any security testing performed through ExoQuest must remain within the scope explicitly provided by the relevant challenge.
+
+## 2. CTF Challenges
+
+ExoQuest may provide cybersecurity challenges involving areas such as:
+
+* Web exploitation
+* Cryptography
+* forensics
+* Reverse engineering
+* Binary exploitation
+* OSINT
+* Steganography
+* Networking
+* Other cybersecurity-related topics
+
+Some challenges may intentionally contain vulnerable applications, files, services, or systems.
+
+Participants are authorized to interact with these systems only for the purpose of solving the corresponding challenge and only within the scope provided by ExoQuest.
+
+Authorization to attack a challenge environment does not provide authorization to attack ExoQuest's production infrastructure, other users, or unrelated third-party systems.
+
+## 3. Accounts
+
+Certain features of ExoQuest may require you to create an account.
+
+When creating an account, you agree to:
+
+* Provide accurate information.
+* Keep your account credentials secure.
+* Not share your account with another person.
+* Not impersonate another user.
+* Not use another person's account.
+* Notify ExoQuest if you believe your account has been compromised.
+
+You are responsible for activity performed through your account.
+
+ExoQuest reserves the right to suspend or terminate accounts that violate these Terms.
+
+## 4. Flags and Submissions
+
+ExoQuest use flags in the format of EXOQ{flag} to verify challenge solutions.
+
+You agree not to:
+
+* Share flags during an active competition.
+* Obtain flags through unauthorized access.
+* Manipulate the submission system.
+* Submit fraudulent or automated answers intended to disrupt the platform.
+* Access unpublished flags or challenge solutions.
+* Attempt to modify scores or challenge completion records.
+
+ExoQuest may invalidate submissions or scores obtained through cheating, exploitation of the platform itself, or violation of competition rules.
+
+## 5. Competition and Leaderboard Rules
+
+ExoQuest may provide competitions, events, tournaments, and public leaderboards.
+
+Participants must follow any additional rules provided for a particular event.
+
+ExoQuest reserves the right to:
+
+* Remove invalid submissions.
+* Correct scoring errors.
+* Remove users or teams from leaderboards.
+* Disqualify participants for cheating or rule violations.
+* Reset or modify scores when necessary.
+* Suspend accounts involved in abusive activity.
+
+Leaderboard rankings may change following verification or administrative review.
+
+## 6. Team Participation
+
+Some ExoQuest competitions may allow users to participate as teams.
+
+Team members are responsible for following the rules of the competition.
+
+Unless explicitly permitted by the event rules, users must not:
+
+* Share accounts.
+* Share flags with unauthorized teams.
+* Collaborate with competing teams.
+* Use unauthorized individuals to solve challenges.
+
+Additional rules may apply to specific team-based competitions.
+
+## 7. Responsible Security Research
+
+ExoQuest encourages responsible cybersecurity research and learning.
+
+If you discover a vulnerability in ExoQuest's production infrastructure that is not intentionally part of a challenge, you should report it to the ExoQuest administrators through the designated security contact.
+
+You must not exploit, publish, sell, or intentionally abuse such vulnerabilities.
+
+Any testing of ExoQuest infrastructure outside explicitly authorized challenge environments must be considered unauthorized unless ExoQuest has provided permission.
+
+## 8. Cookies
+
+We employ the use of cookies and similar technologies.
+
+By accessing ExoQuest, you agree to the use of cookies in accordance with ExoQuest's Privacy Policy.
+
+Cookies may be used to:
+
+* Maintain login sessions.
+* Remember user preferences.
+* Improve website functionality.
+* Understand how users interact with the platform.
+* Improve platform security.
+* Analyze website performance.
+
+Some third-party services integrated with ExoQuest may also use cookies or similar technologies.
+
+## 9. License
+
+Unless otherwise stated, ExoQuest and/or its licensors own the intellectual property rights for all material on ExoQuest.
+
+All intellectual property rights are reserved.
+
+You may access material from ExoQuest for your own personal, educational, and non-commercial use, subject to the restrictions stated in these Terms.
+
+You must not:
+
+* Republish material from ExoQuest without permission.
+* Sell, rent, or sub-license material from ExoQuest.
+* Reproduce, duplicate, or copy proprietary ExoQuest content.
+* Redistribute challenge files or proprietary platform content without permission.
+* Use ExoQuest content for commercial purposes without authorization.
+* Remove copyright, trademark, or other ownership notices.
+
+Challenge content provided under a separate open-source or third-party license will remain subject to that applicable license.
+
+## 10. User-Generated Content
+
+Users may submit content such as challenge write-ups, comments, feedback, profiles, or other materials.
+
+You remain responsible for the content you submit.
+
+You must not submit content that:
+
+* Violates applicable laws.
+* Infringes another person's intellectual property rights.
+* Contains unnecessary personal or sensitive information.
+* Contains malicious code intended to harm other users or systems.
+* Contains abusive, threatening, or unlawful material.
+
+By submitting content to ExoQuest, you grant ExoQuest permission to store, display, and use that content as reasonably necessary to operate and improve the platform.
+
+## 11. Third-Party Websites
+
+ExoQuest may contain links to third-party websites, services, tools, or resources.
+
+ExoQuest does not control and is not responsible for the content, availability, security, or privacy practices of third-party websites.
+
+Accessing third-party websites is at your own discretion and subject to their respective terms and policies.
+
+## 12. Platform Availability
+
+We aim to keep ExoQuest available and functioning properly. However, we do not guarantee that the website or challenge infrastructure will always be available, uninterrupted, secure, or error-free.
+
+ExoQuest may temporarily suspend or modify services for:
+
+* Maintenance.
+* Security updates.
+* Infrastructure changes.
+* Bug fixes.
+* Challenge resets.
+* Technical issues.
+* Other operational requirements.
+
+ExoQuest may modify, remove, or introduce features at any time.
+
+## 13. Disclaimer
+
+The cybersecurity challenges provided by ExoQuest may contain intentionally vulnerable applications, files, scripts, services, or other security-related content.
+
+Such content is provided for educational and authorized testing purposes.
+
+Users are responsible for ensuring that their activities remain within the authorized scope of each challenge.
+
+ExoQuest is not responsible for damage caused by users intentionally using challenge techniques against unauthorized systems.
+
+## 14. Limitation of Liability
+
+To the maximum extent permitted by applicable law, ExoQuest and its operators, contributors, administrators, and affiliates shall not be responsible for any direct, indirect, incidental, or consequential loss arising from the use or inability to use the platform.
+
+Nothing in these Terms is intended to exclude liability that cannot legally be excluded under applicable law.
+
+## 15. Termination
+
+ExoQuest reserves the right to suspend or terminate access to the platform if a user violates these Terms or engages in activity that may harm ExoQuest, its users, or its infrastructure.
+
+Users may stop using ExoQuest at any time.
+
+## 16. Changes to These Terms
+
+ExoQuest reserves the right to update or modify these Terms Of Services at any time.
+
+Any updated version will be published on this page with the updated date.
+
+Your continued use of ExoQuest after changes are published constitutes acceptance of the updated Terms, where permitted by applicable law.
+
+## 17. Contact
+
+If you have any questions regarding these Terms Of Services, you may contact us through the official contact information provided on the ExoQuest website.
+
+**ExoQuest**
