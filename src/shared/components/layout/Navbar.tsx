@@ -11,6 +11,7 @@ import {
   WRITEUPS_URL,
   API_BASE_URL,
   SITE_URL,
+  ACCOUNTS_URL,
 } from "@/shared/lib/config";
 
 interface NavLinkItem {
@@ -135,7 +136,7 @@ export function Navbar() {
       }
     }
     setIsAuthenticated(false);
-    window.location.href = `${PRACTICES_URL}/login?logged_out=true`;
+    window.location.href = `${ACCOUNTS_URL}/login?logged_out=true`;
   };
 
   return (
@@ -180,7 +181,7 @@ export function Navbar() {
           {!hydrated ? (
             <div className="h-9 w-24 rounded bg-[var(--color-card)] animate-pulse" />
           ) : !isAuthenticated ? (
-            <a href={`${PRACTICES_URL}/register?returnTo=${encodeURIComponent(SITE_URL)}`}>
+            <a href={`${ACCOUNTS_URL}/register?returnTo=${encodeURIComponent(SITE_URL)}`}>
               <Button variant="primary" size="sm" leftIcon={<Swords className="w-4 h-4" />}>
                 Start Exploiting
               </Button>
@@ -234,7 +235,7 @@ export function Navbar() {
 
           <div className="pt-4 border-t border-[var(--color-card-border)] space-y-3">
             {!hydrated ? null : !isAuthenticated ? (
-              <a href={`${PRACTICES_URL}/register?returnTo=${encodeURIComponent(SITE_URL)}`} className="block w-full">
+              <a href={`${ACCOUNTS_URL}/register?returnTo=${encodeURIComponent(SITE_URL)}`} className="block w-full">
                 <Button
                   variant="primary"
                   className="w-full"

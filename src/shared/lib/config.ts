@@ -25,3 +25,9 @@ export const SITE_URL = (
   process.env.NEXT_PUBLIC_SITE_URL ||
   (isProd ? "https://exoquest.dev" : "http://localhost:3000")
 ).replace(/\/$/, "");
+
+export const ACCOUNTS_URL = (
+  process.env.NEXT_PUBLIC_ACCOUNTS_URL ||
+  (isProd ? "https://accounts.exoquest.dev" : "http://localhost:3005")
+).replace(/\/$/, "");
+
