@@ -19,9 +19,20 @@ export const WRITEUPS_URL = (
 export const API_BASE_URL = (
   process.env.NEXT_PUBLIC_API_URL ||
   (isProd ? "https://api.exoquest.dev" : "http://localhost:5000")
-).replace(/\/$/, "");
+).replace(/\/$/, "").replace(/\/api$/, "");
 
 export const SITE_URL = (
   process.env.NEXT_PUBLIC_SITE_URL ||
   (isProd ? "https://exoquest.dev" : "http://localhost:3000")
 ).replace(/\/$/, "");
+
+export const ACCOUNTS_URL = (
+  process.env.NEXT_PUBLIC_ACCOUNTS_URL ||
+  (isProd ? "https://accounts.exoquest.dev" : "http://localhost:3005")
+).replace(/\/$/, "");
+
+export const ADMIN_URL = (
+  process.env.NEXT_PUBLIC_ADMIN_URL ||
+  (isProd ? "https://admin.exoquest.dev" : "http://localhost:3004")
+).replace(/\/$/, "");
+

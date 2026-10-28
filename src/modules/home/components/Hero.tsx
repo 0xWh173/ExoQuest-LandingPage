@@ -2,7 +2,7 @@
 
 import { Container } from "@/shared/components/layout/Container";
 import { GridBackground } from "@/shared/components/effects/GridBackground";
-import { PRACTICES_URL, SITE_URL } from "@/shared/lib/config";
+import { PRACTICES_URL, SITE_URL, ACCOUNTS_URL } from "@/shared/lib/config";
 import { InteractiveTerminal } from "./InteractiveTerminal";
 
 export function Hero() {
@@ -28,7 +28,7 @@ export function Hero() {
 
             <div className="mt-10 flex flex-wrap gap-4">
               <a
-                href={`${PRACTICES_URL}/register?returnTo=${encodeURIComponent(SITE_URL)}`}
+                href={`${ACCOUNTS_URL}/register?returnTo=${encodeURIComponent(SITE_URL)}`}
                 className="group relative rounded-xl bg-purple-600 px-7 py-3.5 text-base font-semibold text-white transition-all hover:scale-105 hover:bg-purple-500 active:scale-95"
               >
                 Start Exploiting
