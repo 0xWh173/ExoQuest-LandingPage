@@ -38,11 +38,15 @@ yarn-error.log*
 *.log
 logs/
 
+<<<<<<< Updated upstream
 # env files (can opt-in for committing if needed)
 .env*
 !.env.example
 
 # vercel & build tools
+=======
+# vercel
+>>>>>>> Stashed changes
 .vercel
 .turbo
 .swc
@@ -64,4 +68,7 @@ next-env.d.ts
 # AI / Agentic notes & artifacts
 AGENTS.md
 CLAUDE.md
+
+# Graphify & AI Agents
+graphify-out/
 .agents/
