@@ -148,10 +148,10 @@ export function CardSwap() {
 
   const cardWidth = 500;
   const cardHeight = 410;
-  const cardDistance = 48;
-  const verticalDistance = 54;
+  const cardDistance = 40;
+  const verticalDistance = 0;
   const depth = 85;
-  const skewAmount = 5;
+  const skewAmount = 0;
   const visibleCards = 4;
   const delay = 4500;
   const autoplay = true;
@@ -282,7 +282,7 @@ export function CardSwap() {
     const write = (card: typeof deck[0]) => {
       const { el, shade } = card;
       if (!el) return;
-      el.style.transform = `translate3d(${card.x.toFixed(2)}px, ${card.y.toFixed(2)}px, ${card.z.toFixed(2)}px) rotate(${card.r.toFixed(3)}deg) skewY(${skewAmount}deg)`;
+      el.style.transform = `translate3d(${card.x.toFixed(2)}px, ${card.y.toFixed(2)}px, ${card.z.toFixed(2)}px) rotate(${card.r.toFixed(3)}deg)${skewAmount ? ` skewY(${skewAmount}deg)` : ""}`;
       el.style.zIndex = String(layerOf(card));
       const fade = clamp(visible - card.p, 0, 1);
       el.style.opacity = fade < 1 ? fade.toFixed(3) : "";
