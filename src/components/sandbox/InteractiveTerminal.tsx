@@ -108,14 +108,17 @@ export function InteractiveTerminal() {
     return (
         <div className="rounded-xl border border-[#22262B] bg-[#0A0E14] overflow-hidden h-[445px] w-full max-w-[616px] mx-auto flex flex-col font-mono select-none">
             {/* Title bar */}
-            <div className="flex items-center h-[38px] border-b border-[#292D34] px-[22px] bg-[#12161E] shrink-0">
+            <div className="flex items-center h-[38px] border-b border-[#292D34] pr-[22px] bg-[#12161E] shrink-0" style={{ paddingLeft: "10px" }}>
                 <div className="flex items-center gap-[7px]">
                     <span className="h-3 w-3 rounded-full bg-[#FA2C36]" />
                     <span className="h-3 w-3 rounded-full bg-[#EFB000]" />
                     <span className="h-3 w-3 rounded-full bg-[#00C850]" />
                 </div>
-                <span className="ml-20 font-mono text-xs text-[#7D8590] font-medium tracking-wide">
-                    exoquest ~ zsh
+                <span
+                    className="font-mono text-xs text-[#7D8590] font-medium tracking-wide"
+                    style={{ marginLeft: "10px" }}
+                >
+                    operator@exoquest ~ zsh
                 </span>
             </div>
 
@@ -123,7 +126,7 @@ export function InteractiveTerminal() {
             <div
                 ref={containerRef}
                 className="flex-1 overflow-y-auto pr-6 pt-3 pb-3 font-mono text-[13px] leading-[23px] select-none [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-                style={{ paddingLeft: "15px" }}
+                style={{ paddingLeft: "10px" }}
             >
                 <AnimatePresence mode="popLayout">
                     {lines.map((line, i) => (
