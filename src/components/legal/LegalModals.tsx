@@ -251,33 +251,40 @@ export function LegalModals({ activeModal, onClose }: LegalModalsProps) {
               ✕
             </button>
             <div className="modal-body">
-              <h2 id="refund-title">Refund Policy</h2>
+              <h2 id="refund-title">Refund and Cancellation Policy</h2>
               <p>
-                ExoQuest strives to provide reliable infrastructure for cybersecurity practitioners, academic institutions, and enterprise competition organizers.
+                Thank you for choosing <strong>ExoQuest</strong>. We strive to ensure our community members are satisfied with our services.
+              </p>
+              <p>
+                Please read this policy carefully. This is the Refund and Cancellation Policy of ExoQuest.
               </p>
 
-              <h3>1. Individual Solvers &amp; Free Tier</h3>
+              <h3>1. Cancellations</h3>
               <p>
-                Our core community challenge tracks and public sandbox demos are completely free of charge. No payment details are collected for free practice tiers.
+                You can cancel your subscription or services with us at any time. If you decide to cancel, your cancellation will take effect immediately, but you will retain access to the services through the end of your current paid billing period.
+              </p>
+              <p>
+                To cancel your service, please visit your account settings or contact our support team.
               </p>
 
-              <h3>2. Enterprise &amp; Academic CTF-aaS Hosting</h3>
+              <h3>2. Refunds</h3>
               <p>
-                For custom-hosted CTF competitions, academic labs, and enterprise tournaments, refund eligibility is governed by the event agreement:
+                We issue refunds for our services within 7 days of the original purchase of the service. After 7 days have passed, we will not be able to offer a refund or exchange.
               </p>
+              <p>To be eligible for a return, your request must meet the following criteria:</p>
               <ul>
-                <li>
-                  <strong>Event Cancellation:</strong> If a scheduled tournament is cancelled with at least 14 days notice prior to challenge deployment, a full refund of setup fees minus reserved cloud capacity costs will be issued.
-                </li>
-                <li>
-                  <strong>Infrastructure Outages:</strong> In the rare event of verified platform unavailability on our end during scheduled competition hours, a prorated credit or refund will be provided according to the service level agreement.
-                </li>
+                <li>The refund request is made within 7 days of the initial purchase.</li>
+                <li>You have a valid reason for the refund, such as a major defect in the service or failure to deliver as promised.</li>
+                <li>You have not extensively used the service in a way that violates our terms.</li>
               </ul>
 
-              <h3>3. Contacting Billing</h3>
+              <h3>3. Exceptions</h3>
               <p>
-                To request an invoice review or refund inquiry, email <strong>contact@exoquest.dev</strong> with your event reference ID.
+                Certain types of services or digital goods cannot be returned or refunded once they have been accessed or downloaded. We reserve the right to refuse refunds if we suspect abuse of our policy.
               </p>
+
+              <h3>4. Contact Us</h3>
+              <p>If you have any questions about our Returns and Refunds Policy, please contact us.</p>
             </div>
           </div>
         </div>
