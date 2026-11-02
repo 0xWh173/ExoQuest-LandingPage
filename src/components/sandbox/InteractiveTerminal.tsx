@@ -122,7 +122,8 @@ export function InteractiveTerminal() {
             {/* Body */}
             <div
                 ref={containerRef}
-                className="flex-1 overflow-y-auto pl-9 pr-6 pt-3 pb-3 font-mono text-[13px] leading-[23px] select-none [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+                className="flex-1 overflow-y-auto pr-6 pt-3 pb-3 font-mono text-[13px] leading-[23px] select-none [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+                style={{ paddingLeft: "15px" }}
             >
                 <AnimatePresence mode="popLayout">
                     {lines.map((line, i) => (
