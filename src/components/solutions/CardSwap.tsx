@@ -829,18 +829,6 @@ export function CardSwap() {
           </svg>
         </button>
       </div>
-
-      <div className="solutions-swap-hint-bar">
-        <span className="hint-pill">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <polyline points="12 6 12 12 16 14"></polyline>
-          </svg>
-          Auto-cycling
-        </span>
-        <span className="hint-divider">•</span>
-        <span>Click cards behind to bring forward</span>
-      </div>
     </div>
   );
 }

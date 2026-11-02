@@ -18,7 +18,7 @@ export function Footer({ onNavigate, onOpenModal, onShowToast }: FooterProps) {
   };
 
   return (
-    <footer className="footer">
+    <footer className="footer" id="site-footer">
       <div className="footer-inner">
         <div className="footer-mirrored-grid">
           {/* Column 1: Brand & Contact Info */}
@@ -38,8 +38,8 @@ export function Footer({ onNavigate, onOpenModal, onShowToast }: FooterProps) {
               </span>
             </a>
             <p>
-              The modern cybersecurity practice platform and turnkey CTF-as-a-Service for universities, companies, and
-              ethical hackers worldwide.
+              The modern cybersecurity Practice Platform and turnkey CTF-as-a-Service empowering universities,
+              companies, and ethical hackers worldwide.
             </p>
             <div className="footer-contact-info">
               <span>Direct Inquiries:</span>
@@ -95,11 +95,6 @@ export function Footer({ onNavigate, onOpenModal, onShowToast }: FooterProps) {
                   Learn (Coming Soon)
                 </a>
               </li>
-              <li>
-                <a href="#free-challenge" onClick={(e) => handleLink(e, "home", "free-challenge")}>
-                  Live Sandbox Demo
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -130,48 +125,18 @@ export function Footer({ onNavigate, onOpenModal, onShowToast }: FooterProps) {
             </ul>
           </div>
 
-          {/* Column 4: Resources */}
-          <div className="footer-col">
-            <h4 className="footer-col-title">Resources</h4>
-            <ul className="footer-links-list">
-              <li>
-                <button
-                  type="button"
-                  id="footer-writeups-link"
-                  onClick={() => onShowToast?.("Writeups & Guides portal coming soon!")}
-                >
-                  Writeups &amp; Guides
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  id="footer-blog-link"
-                  onClick={() => onShowToast?.("Security Blog portal coming soon!")}
-                >
-                  Security Blog
-                </button>
-              </li>
-            </ul>
-          </div>
-
           {/* Column 5: Company */}
           <div className="footer-col">
             <h4 className="footer-col-title">Company</h4>
             <ul className="footer-links-list">
               <li>
                 <a href="#about" onClick={(e) => handleLink(e, "home", "about")}>
-                  About ExoQuest
+                  Vision & Mission
                 </a>
               </li>
               <li>
                 <a href="#contact" onClick={(e) => handleLink(e, "contact")}>
-                  Contact &amp; Partnerships
-                </a>
-              </li>
-              <li>
-                <a href="#trust" onClick={(e) => handleLink(e, "home", "trust")}>
-                  Into the Void 2.0
+                  Contact
                 </a>
               </li>
             </ul>
@@ -180,7 +145,7 @@ export function Footer({ onNavigate, onOpenModal, onShowToast }: FooterProps) {
 
         {/* Bottom Bar with Legal Modals */}
         <div className="footer-bottom-bar">
-          <p className="footer-copyright">© 2026 ExoQuest. All rights reserved.</p>
+          <p className="footer-copyright">© {new Date().getFullYear()} ExoQuest. All rights reserved.</p>
           <div className="footer-legal-links">
             <button type="button" id="terms-link" onClick={() => onOpenModal("terms")}>
               Terms and Conditions
@@ -197,4 +162,3 @@ export function Footer({ onNavigate, onOpenModal, onShowToast }: FooterProps) {
     </footer>
   );
 }
-
