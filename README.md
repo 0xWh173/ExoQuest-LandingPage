@@ -13,7 +13,6 @@ The next-generation cyber simulation, dynamic attack-defense range, and cybersec
   - WebGL 3D Curved Cylinder Gallery (`CircularGallery.tsx`)
   - 3D Spring-Physics Stacked Carousel (`CardSwap.tsx`)
   - Glitch & Pointer-Distortion Canvas (`FuzzyText.tsx`)
-- **Styling**: Cyberpunk design system, CSS variables, glassmorphism, responsive media queries
 - **Typography**: Space Grotesk & JetBrains Mono
 
 ---
