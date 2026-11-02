@@ -28,6 +28,7 @@ export default function HomePage() {
   const routeMap: Record<string, { route: NavRoute; target?: string }> = {
     home: { route: "home", target: "home" },
     trust: { route: "home", target: "trust" },
+    events: { route: "home", target: "trust" },
     "free-challenge": { route: "home", target: "free-challenge" },
     about: { route: "home", target: "about" },
     products: { route: "products", target: "products" },
