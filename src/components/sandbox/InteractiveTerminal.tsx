@@ -123,7 +123,7 @@ export function InteractiveTerminal() {
             <div
                 ref={containerRef}
                 className="flex-1 overflow-y-auto pr-6 pt-3 pb-3 font-mono text-[13px] leading-[23px] select-none [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-                style={{ paddingLeft: "44px" }}
+                style={{ paddingLeft: "15px" }}
             >
                 <AnimatePresence mode="popLayout">
                     {lines.map((line, i) => (
