@@ -113,7 +113,7 @@ export function ProductsView({ isActive, onNavigate }: ProductsViewProps) {
                 <li className="product-feature-item">
                   <span className="product-feature-bullet">▸</span>
                   <span className="product-feature-text">
-                    <strong>Jeopardy &amp; Attack-Defense:</strong> Native support for Jeopardy boards, King-of-the-Hill (KotH), and multi-team Attack-Defense formats.
+                    <strong>Jeopardy</strong> Native support for Jeopardy boards,  and various formats.
                   </span>
                 </li>
               </ul>
