@@ -777,10 +777,6 @@ export function CardSwap() {
                       </li>
                     ))}
                   </ul>
-
-                  <div className="solution-swap-footer">
-                    <span className="solution-drag-hint">Drag or swipe card ➔</span>
-                  </div>
                 </div>
                 <span className="card-swap-card-rim" aria-hidden="true"></span>
               </div>
@@ -842,8 +838,6 @@ export function CardSwap() {
           </svg>
           Auto-cycling
         </span>
-        <span className="hint-divider">•</span>
-        <span>Drag / flick cards in any direction</span>
         <span className="hint-divider">•</span>
         <span>Click cards behind to bring forward</span>
       </div>
