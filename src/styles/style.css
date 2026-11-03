@@ -1884,7 +1884,7 @@ section {
   width: 100%;
   padding: 12px 20px;
   border-radius: 12px;
-  background: hsla(270, 95%, 65%, 0.12);
+  background: transparent;
   border: 1px solid var(--border-glow);
   color: #fff;
   font-family: var(--font-head);
@@ -1893,14 +1893,18 @@ section {
   letter-spacing: 0.05em;
   text-decoration: none;
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition), background var(--transition), color var(--transition);
+  will-change: transform;
 }
 .product-action-btn:hover {
-  background: var(--accent);
-  color: #fff;
+  transform: translate3d(0, -3px, 0);
   border-color: var(--accent);
-  box-shadow: 0 8px 24px hsla(270, 95%, 65%, 0.35);
-  transform: translateY(-2px);
+  background: hsla(270, 95%, 65%, 0.14);
+  color: #fff;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4), 0 0 18px hsla(270, 95%, 65%, 0.2);
+}
+.product-action-btn:active {
+  transform: translate3d(0, -1px, 0) scale(0.99);
 }
 .product-action-btn--secondary {
   background: transparent;

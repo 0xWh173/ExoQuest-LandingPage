@@ -25,14 +25,7 @@ export function ProductsView({ isActive, onNavigate }: ProductsViewProps) {
           <div className="product-card" id="products-practice">
             <div>
               <div className="product-top-row">
-                <span className="product-badge-pill">Core Product</span>
-                <div className="product-icon-wrap">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect width="18" height="18" x="3" y="3" rx="2" />
-                    <path d="m9 8 3 3-3 3" />
-                    <line x1="15" x2="15.01" y1="16" y2="16" />
-                  </svg>
-                </div>
+                <span className="product-badge-pill">Enterprise Infrastructure</span>
               </div>
               <h3 className="product-title">Practice Platform</h3>
               <p className="product-tagline">// Hands-On Vulnerability Mastery</p>
@@ -65,7 +58,7 @@ export function ProductsView({ isActive, onNavigate }: ProductsViewProps) {
 
             <a
               href="#free-challenge"
-              className="product-action-btn"
+              className="product-action-btn scale-btn"
               onClick={(e) => {
                 e.preventDefault();
                 onNavigate("home", "free-challenge");
@@ -83,12 +76,7 @@ export function ProductsView({ isActive, onNavigate }: ProductsViewProps) {
           <div className="product-card" id="products-ctf">
             <div>
               <div className="product-top-row">
-                <span className="product-badge-pill">Enterprise Infrastructure</span>
-                <div className="product-icon-wrap">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                  </svg>
-                </div>
+                <span className="product-badge-pill">Core Product</span>
               </div>
               <h3 className="product-title">CTF-as-a-Service (CTF-aaS)</h3>
               <p className="product-tagline">// Turnkey Tournament Orchestration</p>
@@ -121,7 +109,7 @@ export function ProductsView({ isActive, onNavigate }: ProductsViewProps) {
 
             <a
               href="#contact"
-              className="product-action-btn"
+              className="product-action-btn scale-btn"
               onClick={(e) => {
                 e.preventDefault();
                 onNavigate("contact");
