@@ -91,8 +91,8 @@ export function Footer({ onNavigate, onOpenModal, onShowToast }: FooterProps) {
                 </a>
               </li>
               <li>
-                <a href="#products-learn" onClick={(e) => handleLink(e, "products", "products-learn")}>
-                  Learn (Coming Soon)
+                <a href="#products-writeups" onClick={(e) => handleLink(e, "products", "products-writeups")}>
+                  Writeup Service
                 </a>
               </li>
             </ul>
