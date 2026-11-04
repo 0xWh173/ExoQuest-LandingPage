@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { NavRoute } from "../layout/SiteHeader";
+import AnimatedList from "@/components/effects/AnimatedList";
 
 interface ProductsViewProps {
   isActive: boolean;
@@ -10,15 +11,17 @@ interface ProductsViewProps {
 
 
 export interface AddonService {
-  name: string;
+  title: string;
+  name?: string;
   description: string;
   icon: React.ReactNode;
 }
 
 const ADDON_SERVICES: AddonService[] = [
   {
+    title: "Cheat Detection",
     name: "Cheat Detection",
-    description: "Anomaly analysis, submission velocity monitoring, and anti-collusion telemetry to ensure tournament fairness.",
+    description: "Detect suspicious activity to ensure fair and secure competitions.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
@@ -27,8 +30,9 @@ const ADDON_SERVICES: AddonService[] = [
     ),
   },
   {
+    title: "Docker Instances",
     name: "Docker Instances",
-    description: "Dedicated, isolated on-demand container environments spawned per contestant with automated lifecycle cleanup.",
+    description: "Isolated Docker containers for each contestant with automatic cleanup.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
@@ -38,8 +42,9 @@ const ADDON_SERVICES: AddonService[] = [
     ),
   },
   {
+    title: "Question Creation",
     name: "Question Creation",
-    description: "Custom handcrafted challenges with flags, writeups, and hints tailored to your event requirements and syllabus.",
+    description: "Custom handcrafted challenges with flags, writeups, and hints.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
@@ -51,8 +56,9 @@ const ADDON_SERVICES: AddonService[] = [
     ),
   },
   {
+    title: "First Blood",
     name: "First Blood",
-    description: "Real-time leaderboard race broadcasts, instant solve alerts, and bonus scoring telemetry for the fastest solvers.",
+    description: "instant solve alerts, and bonus scoring telemetry for the fastest solvers.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
@@ -60,8 +66,9 @@ const ADDON_SERVICES: AddonService[] = [
     ),
   },
   {
+    title: "Dynamic Flags",
     name: "Dynamic Flags",
-    description: "Unique, cryptographically generated flag values per participant to eliminate unauthorized flag sharing and leaks.",
+    description: "Unique, cryptographically generated flag values per participant or team to eliminate answer sharing.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
@@ -70,8 +77,9 @@ const ADDON_SERVICES: AddonService[] = [
     ),
   },
   {
+    title: "Rate Limiting",
     name: "Rate Limiting",
-    description: "Brute-force protection, intelligent submission throttling, and anti-DDoS safeguards to maintain platform stability.",
+    description: "Automated brute-force protection, request throttling, and API security against DDoS attacks.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" />
@@ -297,16 +305,20 @@ export function ProductsView({ isActive, onNavigate }: ProductsViewProps) {
                 </p>
               </div>
 
-              <div className="addon-services-grid">
-                {ADDON_SERVICES.map((addon) => (
-                  <div key={addon.name} className="addon-service-item">
-                    <div className="addon-service-icon">{addon.icon}</div>
-                    <div className="addon-service-info">
-                      <span className="addon-service-name">{addon.name}</span>
-                      <p className="addon-service-desc">{addon.description}</p>
-                    </div>
-                  </div>
-                ))}
+              <div className="addon-services-animated-wrap" style={{ margin: "16px 0 20px" }}>
+                <AnimatedList
+                  items={ADDON_SERVICES}
+                  animation="pop"
+                  theme="dark"
+                  width="100%"
+                  maxHeight={380}
+                  gap={10}
+                  radius={12}
+                  frame={false}
+                  selectOnHover={true}
+                  enableArrowNavigation={true}
+                  accentColor="rgba(168, 85, 247, 0.7)"
+                />
               </div>
 
               <div className="addon-modal-footer">
