@@ -104,7 +104,7 @@ export function renderCyberCard(item: GalleryItem): string {
     ctx.moveTo(w - 52, h - 28); ctx.lineTo(w - 28, h - 28); ctx.lineTo(w - 28, h - 52); ctx.stroke();
 
     const cx = w / 2;
-    const cy = h / 2 - 30;
+    const cy = h / 2;
 
     ctx.save();
     ctx.strokeStyle = "rgba(255, 255, 255, 0.1)";
@@ -133,12 +133,6 @@ export function renderCyberCard(item: GalleryItem): string {
     ctx.moveTo(cx, cy - 24); ctx.lineTo(cx, cy + 24);
     ctx.stroke();
     ctx.restore();
-
-    ctx.textAlign = "center";
-    ctx.textBaseline = "middle";
-    ctx.font = "900 42px 'Space Grotesk', system-ui, sans-serif";
-    ctx.fillStyle = "rgba(255, 255, 255, 0.85)";
-    ctx.fillText("Upcoming", cx, cy + 105);
 
     return canvas.toDataURL("image/png");
   }
