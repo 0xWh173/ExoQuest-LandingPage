@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ExoQuest — Official Landing Platform
 
-## Getting Started
+The next-generation cyber simulation, dynamic attack-defense range, and cybersecurity verification platform for universities, enterprises, and elite security operators.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠️ Tech Stack & Architecture
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router, React 19)
+- **Language**: TypeScript (`.tsx`)
+- **Graphics & Visuals**:
+  - WebGL Procedural GLSL Shaders (`DarkVeil.tsx`)
+  - WebGL 3D Curved Cylinder Gallery (`CircularGallery.tsx`)
+  - 3D Spring-Physics Stacked Carousel (`CardSwap.tsx`)
+  - Glitch & Pointer-Distortion Canvas (`FuzzyText.tsx`)
+- **Typography**: Space Grotesk & JetBrains Mono
+
+---
+
+## 📂 Project Structure
+
+```text
+ExoQuest-LandingPage/
+├── public/
+│   ├── favicon.ico
+│   └── images/
+│       ├── into-the-void-2.jpg
+│       ├── logo.png
+│       └── operation-blackout.jpg
+├── src/
+│   ├── app/
+│   │   ├── globals.css         # Global tailwind & stylesheet imports
+│   │   ├── layout.tsx          # Root layout & font configuration
+│   │   └── page.tsx            # SPA controller & hash route manager
+│   ├── components/
+│   │   ├── effects/
+│   │   │   ├── DarkVeil.tsx    # WebGL neural shader background
+│   │   │   └── FuzzyText.tsx   # Canvas glitch text effect
+│   │   ├── events/
+│   │   │   └── CircularGallery.tsx # 3D WebGL event cards carousel
+│   │   ├── layout/
+│   │   │   ├── Footer.tsx      # 5-column navigation & legal triggers
+│   │   │   └── SiteHeader.tsx  # Sticky header & responsive mobile drawer
+│   │   ├── legal/
+│   │   │   └── LegalModals.tsx # Terms, Privacy, and Refund policy dialogs
+│   │   ├── sandbox/
+│   │   │   └── InteractiveTerminal.tsx # Exploit typing simulation
+│   │   ├── solutions/
+│   │   │   └── CardSwap.tsx    # 3D spring-physics solution cards
+│   │   └── views/
+│   │       ├── ContactView.tsx # Contact channels & inquiry form
+│   │       ├── HomeView.tsx    # Hero, stats, vision/mission, events
+│   │       ├── ProductsView.tsx# Practice platform, CTF-as-a-service, learn
+│   │       └── SolutionsView.tsx # Solutions by audience host
+│   └── styles/
+│       ├── CardSwap.css        # 3D stack carousel CSS
+│       ├── CircularGallery.css # WebGL events gallery CSS
+│       └── style.css           # Core cyberpunk design system
+├── next.config.mjs
+├── package.json
+└── tsconfig.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
+- Node.js 18+
+- npm
 
-## Learn More
+### Development
+```powershell
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Production Build
+```powershell
+npm run build
+npm start
+```
